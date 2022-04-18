@@ -1,0 +1,354 @@
+{
+  "address": "0x8Ff48A7EAE9243486212F4a024C7e2fff563b131",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address[]",
+          "name": "_signers",
+          "type": "address[]"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_numConfirmationsRequired",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "sender",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "balance",
+          "type": "uint256"
+        }
+      ],
+      "name": "Deposit",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "signer",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "uint256",
+          "name": "txIndex",
+          "type": "uint256"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "value",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "name": "SubmitTransaction",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "getSigners",
+      "outputs": [
+        {
+          "internalType": "address[]",
+          "name": "",
+          "type": "address[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getTransactionCount",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "isConfirmed",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "isSigner",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "numConfirmationsRequired",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_to",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_value",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes",
+          "name": "_data",
+          "type": "bytes"
+        },
+        {
+          "internalType": "bytes32[]",
+          "name": "rs",
+          "type": "bytes32[]"
+        },
+        {
+          "internalType": "bytes32[]",
+          "name": "ss",
+          "type": "bytes32[]"
+        },
+        {
+          "internalType": "uint8[]",
+          "name": "vs",
+          "type": "uint8[]"
+        }
+      ],
+      "name": "submitTransaction",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "stateMutability": "payable",
+      "type": "receive"
+    }
+  ],
+  "transactionHash": "0xb0034291e58e83a8f5290721dff11b4bc641c588da99c94e386e756f3cd03e0a",
+  "receipt": {
+    "to": null,
+    "from": "0x6C641CE6A7216F12d28692f9d8b2BDcdE812eD2b",
+    "contractAddress": "0x8Ff48A7EAE9243486212F4a024C7e2fff563b131",
+    "transactionIndex": 2,
+    "gasUsed": "1182337",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0xc0e19184e2ef005939b79f74f731bfc093c15f25f698ac1d3186c78b317a28c1",
+    "transactionHash": "0xb0034291e58e83a8f5290721dff11b4bc641c588da99c94e386e756f3cd03e0a",
+    "logs": [],
+    "blockNumber": 9967456,
+    "cumulativeGasUsed": "1380069",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [
+    [
+      "0x6C641CE6A7216F12d28692f9d8b2BDcdE812eD2b",
+      "0xDEfd29b83702cC5dA21a65Eed1FEC2CEAB768074",
+      "0x8c7D7aB71Bb76F1fdfB9525DD25E4e060fa0995A",
+      "0x9C702CC077FE63F0BA5b69dac3861ed5727778c9",
+      "0x69927ab9c9937f36312958E192d27819522eeEC9",
+      "0xb89e07389A98f6FA9bee9c4De220E95eba30Abe9",
+      "0x9066FDDc2672Ea3faA20B377126e3f3Fe0221775",
+      "0x495A1abaB1A5E2c71BAe9E686309704032D61939"
+    ],
+    2
+  ],
+  "solcInputHash": "343c14e48fe02db26db133031df7b26c",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.0+commit.c7dfd78e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address[]\",\"name\":\"_signers\",\"type\":\"address[]\"},{\"internalType\":\"uint256\",\"name\":\"_numConfirmationsRequired\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"sender\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"balance\",\"type\":\"uint256\"}],\"name\":\"Deposit\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"signer\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"uint256\",\"name\":\"txIndex\",\"type\":\"uint256\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"SubmitTransaction\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"getSigners\",\"outputs\":[{\"internalType\":\"address[]\",\"name\":\"\",\"type\":\"address[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getTransactionCount\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"isConfirmed\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"isSigner\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"numConfirmationsRequired\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_value\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"_data\",\"type\":\"bytes\"},{\"internalType\":\"bytes32[]\",\"name\":\"rs\",\"type\":\"bytes32[]\"},{\"internalType\":\"bytes32[]\",\"name\":\"ss\",\"type\":\"bytes32[]\"},{\"internalType\":\"uint8[]\",\"name\":\"vs\",\"type\":\"uint8[]\"}],\"name\":\"submitTransaction\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"stateMutability\":\"payable\",\"type\":\"receive\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/MultiSigWallet.sol\":\"MultiSigWallet\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts/security/ReentrancyGuard.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n\\npragma solidity ^0.8.0;\\n\\n/**\\n * @dev Contract module that helps prevent reentrant calls to a function.\\n *\\n * Inheriting from `ReentrancyGuard` will make the {nonReentrant} modifier\\n * available, which can be applied to functions to make sure there are no nested\\n * (reentrant) calls to them.\\n *\\n * Note that because there is a single `nonReentrant` guard, functions marked as\\n * `nonReentrant` may not call one another. This can be worked around by making\\n * those functions `private`, and then adding `external` `nonReentrant` entry\\n * points to them.\\n *\\n * TIP: If you would like to learn more about reentrancy and alternative ways\\n * to protect against it, check out our blog post\\n * https://blog.openzeppelin.com/reentrancy-after-istanbul/[Reentrancy After Istanbul].\\n */\\nabstract contract ReentrancyGuard {\\n    // Booleans are more expensive than uint256 or any type that takes up a full\\n    // word because each write operation emits an extra SLOAD to first read the\\n    // slot's contents, replace the bits taken up by the boolean, and then write\\n    // back. This is the compiler's defense against contract upgrades and\\n    // pointer aliasing, and it cannot be disabled.\\n\\n    // The values being non-zero value makes deployment a bit more expensive,\\n    // but in exchange the refund on every call to nonReentrant will be lower in\\n    // amount. Since refunds are capped to a percentage of the total\\n    // transaction's gas, it is best to keep them low in cases like this one, to\\n    // increase the likelihood of the full refund coming into effect.\\n    uint256 private constant _NOT_ENTERED = 1;\\n    uint256 private constant _ENTERED = 2;\\n\\n    uint256 private _status;\\n\\n    constructor () {\\n        _status = _NOT_ENTERED;\\n    }\\n\\n    /**\\n     * @dev Prevents a contract from calling itself, directly or indirectly.\\n     * Calling a `nonReentrant` function from another `nonReentrant`\\n     * function is not supported. It is possible to prevent this from happening\\n     * by making the `nonReentrant` function external, and make it call a\\n     * `private` function that does the actual work.\\n     */\\n    modifier nonReentrant() {\\n        // On the first call to nonReentrant, _notEntered will be true\\n        require(_status != _ENTERED, \\\"ReentrancyGuard: reentrant call\\\");\\n\\n        // Any calls to nonReentrant after this point will fail\\n        _status = _ENTERED;\\n\\n        _;\\n\\n        // By storing the original value once again, a refund is triggered (see\\n        // https://eips.ethereum.org/EIPS/eip-2200)\\n        _status = _NOT_ENTERED;\\n    }\\n}\\n\",\"keccak256\":\"0x1278c76b840063ff5e14a2d7c5707812c1eabc2342ed040bf862c2d7552102fe\",\"license\":\"MIT\"},\"@openzeppelin/contracts/utils/Counters.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n\\npragma solidity ^0.8.0;\\n\\n/**\\n * @title Counters\\n * @author Matt Condon (@shrugs)\\n * @dev Provides counters that can only be incremented or decremented by one. This can be used e.g. to track the number\\n * of elements in a mapping, issuing ERC721 ids, or counting request ids.\\n *\\n * Include with `using Counters for Counters.Counter;`\\n */\\nlibrary Counters {\\n    struct Counter {\\n        // This variable should never be directly accessed by users of the library: interactions must be restricted to\\n        // the library's function. As of Solidity v0.5.2, this cannot be enforced, though there is a proposal to add\\n        // this feature: see https://github.com/ethereum/solidity/issues/4637\\n        uint256 _value; // default: 0\\n    }\\n\\n    function current(Counter storage counter) internal view returns (uint256) {\\n        return counter._value;\\n    }\\n\\n    function increment(Counter storage counter) internal {\\n        unchecked {\\n            counter._value += 1;\\n        }\\n    }\\n\\n    function decrement(Counter storage counter) internal {\\n        uint256 value = counter._value;\\n        require(value > 0, \\\"Counter: decrement overflow\\\");\\n        unchecked {\\n            counter._value = value - 1;\\n        }\\n    }\\n}\\n\",\"keccak256\":\"0x62d306ff0499a11913bc60b5939eec619509b5c67b30e86ebf8b8bda0b7a7fee\",\"license\":\"MIT\"},\"contracts/MultiSigWallet.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n\\npragma solidity 0.8.0;\\n\\nimport \\\"@openzeppelin/contracts/security/ReentrancyGuard.sol\\\";\\nimport \\\"@openzeppelin/contracts/utils/Counters.sol\\\";\\n\\ncontract MultiSigWallet is ReentrancyGuard {\\n    using Counters for Counters.Counter;\\n    event Deposit(address indexed sender, uint256 amount, uint256 balance);\\n    event SubmitTransaction(address indexed signer, uint256 indexed txIndex, address indexed to, uint256 value, bytes data);\\n\\n    address[] private signers;\\n    mapping(address => bool) public isSigner;\\n    uint256 public numConfirmationsRequired;\\n\\n    // mapping from tx index => signer => bool\\n    mapping(uint256 => mapping(address => bool)) public isConfirmed;\\n    Counters.Counter private txIds;\\n\\n    modifier onlySigner() {\\n        require(isSigner[msg.sender], \\\"not signer\\\");\\n        _;\\n    }\\n\\n    constructor(address[] memory _signers, uint256 _numConfirmationsRequired) {\\n        require(_signers.length > 0, \\\"signers required\\\");\\n        require(\\n            _numConfirmationsRequired > 0 && _numConfirmationsRequired <= _signers.length,\\n            \\\"invalid number of required confirmations\\\"\\n        );\\n\\n        for (uint256 i = 0; i < _signers.length; i++) {\\n            address signer = _signers[i];\\n\\n            require(signer != address(0), \\\"invalid signer\\\");\\n            require(!isSigner[signer], \\\"signer not unique\\\");\\n\\n            isSigner[signer] = true;\\n            signers.push(signer);\\n        }\\n\\n        numConfirmationsRequired = _numConfirmationsRequired;\\n    }\\n\\n    receive() external payable {\\n        emit Deposit(msg.sender, msg.value, address(this).balance);\\n    }\\n\\n    function submitTransaction(\\n        address _to,\\n        uint256 _value,\\n        bytes memory _data,\\n        bytes32[] memory rs,\\n        bytes32[] memory ss,\\n        uint8[] memory vs\\n    ) external payable onlySigner nonReentrant {\\n        require(_to != address(0), \\\"ZERO Address\\\");\\n        require(rs.length == ss.length && ss.length == vs.length, \\\"Signaure lengths should be same\\\");\\n        uint256 sigLength = rs.length;\\n        require(sigLength >= numConfirmationsRequired, \\\"Less than needed required confirmations\\\");\\n        if (_value > 0) {\\n            require(msg.value == _value, \\\"Should send value\\\");\\n        }\\n        uint256 ii;\\n        uint256 txIdx = txIds.current();\\n        for (ii = 0; ii < sigLength; ii++) {\\n            address _signer = _getSigner(_to, _value, _data, rs[ii], ss[ii], vs[ii]);\\n            require(isSigner[_signer] && !isConfirmed[txIdx][_signer], \\\"Not signer or duplicated signer for this transaction\\\");\\n            isConfirmed[txIdx][_signer] = true;\\n        }\\n        (bool success, ) = _to.call{value: _value}(_data);\\n        require(success, \\\"tx failed\\\");\\n\\n        emit SubmitTransaction(msg.sender, txIdx, _to, _value, _data);\\n        txIds.increment();\\n    }\\n\\n    function _getSigner(\\n        address _to,\\n        uint256 _value,\\n        bytes memory _data,\\n        bytes32 r,\\n        bytes32 s,\\n        uint8 v\\n    ) private pure returns (address) {\\n        bytes32 msgHash = keccak256(abi.encodePacked(_to, _value, _data));\\n        bytes32 digest = keccak256(abi.encodePacked(\\\"\\\\x19Ethereum Signed Message:\\\\n32\\\", msgHash));\\n        address recoveredAddress = ecrecover(digest, v, r, s);\\n        return recoveredAddress;\\n    }\\n\\n    function getSigners() external view returns (address[] memory) {\\n        return signers;\\n    }\\n\\n    function getTransactionCount() external view returns (uint256) {\\n        return txIds.current();\\n    }\\n}\\n\",\"keccak256\":\"0x8be9e2d358d0ada9c36bb08d1249c572fdc776cba38e9347abac4f59f222a870\",\"license\":\"MIT\"}},\"version\":1}",
+  "bytecode": "0x60806040523480156200001157600080fd5b5060405162001023380380620010238339810160408190526200003491620001de565b60016000558151620000635760405162461bcd60e51b81526004016200005a90620002dc565b60405180910390fd5b60008111801562000075575081518111155b620000945760405162461bcd60e51b81526004016200005a9062000331565b60005b8251811015620001b6576000838281518110620000c457634e487b7160e01b600052603260045260246000fd5b6020026020010151905060006001600160a01b0316816001600160a01b03161415620001045760405162461bcd60e51b81526004016200005a90620002b4565b6001600160a01b03811660009081526002602052604090205460ff1615620001405760405162461bcd60e51b81526004016200005a9062000306565b6001600160a01b03166000818152600260205260408120805460ff191660019081179091558054808201825591527fb10e2d527612073b26eecdfd717e6a320cf44b4afac2b0732d9fcbe2b7fa0cf60180546001600160a01b031916909117905580620001ad8162000379565b91505062000097565b5060035550620003b7565b80516001600160a01b0381168114620001d957600080fd5b919050565b60008060408385031215620001f1578182fd5b82516001600160401b038082111562000208578384fd5b818501915085601f8301126200021c578384fd5b8151602082821115620002335762000233620003a1565b80820260405182828201018181108682111715620002555762000255620003a1565b604052838152828101945085830182870184018b101562000274578889fd5b8896505b84871015620002a1576200028c81620001c1565b86526001969096019594830194830162000278565b5097909101519698969750505050505050565b6020808252600e908201526d34b73b30b634b21039b4b3b732b960911b604082015260600190565b60208082526010908201526f1cda59db995c9cc81c995c5d5a5c995960821b604082015260600190565b6020808252601190820152707369676e6572206e6f7420756e6971756560781b604082015260600190565b60208082526028908201527f696e76616c6964206e756d626572206f6620726571756972656420636f6e6669604082015267726d6174696f6e7360c01b606082015260800190565b60006000198214156200039a57634e487b7160e01b81526011600452602481fd5b5060010190565b634e487b7160e01b600052604160045260246000fd5b610c5c80620003c76000396000f3fe6080604052600436106100595760003560e01c80632e7700f0146100a85780637df73e27146100d357806380f59a651461010057806394cf795e14610120578063d0549b8514610142578063da33f1a414610157576100a3565b366100a357336001600160a01b03167f90890809c654f11d6e72a28fa60149770a0d11ec6c92319d6ceb2bb0a4ea1a153447604051610099929190610b5d565b60405180910390a2005b600080fd5b3480156100b457600080fd5b506100bd61016c565b6040516100ca9190610b1a565b60405180910390f35b3480156100df57600080fd5b506100f36100ee36600461076a565b61017d565b6040516100ca9190610950565b34801561010c57600080fd5b506100f361011b36600461084c565b610192565b34801561012c57600080fd5b506101356101b2565b6040516100ca9190610903565b34801561014e57600080fd5b506100bd610214565b61016a61016536600461078b565b61021a565b005b60006101786005610548565b905090565b60026020526000908152604090205460ff1681565b600460209081526000928352604080842090915290825290205460ff1681565b6060600180548060200260200160405190810160405280929190818152602001828054801561020a57602002820191906000526020600020905b81546001600160a01b031681526001909101906020018083116101ec575b5050505050905090565b60035481565b3360009081526002602052604090205460ff166102525760405162461bcd60e51b815260040161024990610a4b565b60405180910390fd5b600260005414156102755760405162461bcd60e51b815260040161024990610ae3565b60026000556001600160a01b0386166102a05760405162461bcd60e51b815260040161024990610abd565b815183511480156102b2575080518251145b6102ce5760405162461bcd60e51b815260040161024990610a14565b82516003548110156102f25760405162461bcd60e51b815260040161024990610979565b8515610317578534146103175760405162461bcd60e51b815260040161024990610a92565b6000806103246005610548565b9050600091505b828210156104615760006103b88a8a8a8a878151811061035b57634e487b7160e01b600052603260045260246000fd5b60200260200101518a888151811061038357634e487b7160e01b600052603260045260246000fd5b60200260200101518a89815181106103ab57634e487b7160e01b600052603260045260246000fd5b6020026020010151610550565b6001600160a01b03811660009081526002602052604090205490915060ff168015610406575060008281526004602090815260408083206001600160a01b038516845290915290205460ff16155b6104225760405162461bcd60e51b8152600401610249906109c0565b60008281526004602090815260408083206001600160a01b03909416835292905220805460ff191660011790558161045981610be9565b92505061032b565b6000896001600160a01b0316898960405161047c91906108b6565b60006040518083038185875af1925050503d80600081146104b9576040519150601f19603f3d011682016040523d82523d6000602084013e6104be565b606091505b50509050806104df5760405162461bcd60e51b815260040161024990610a6f565b896001600160a01b031682336001600160a01b03167fd5a05bf70715ad82a09a756320284a1b54c9ff74cd0f8cce6219e79b563fe59d8c8c604051610525929190610b23565b60405180910390a4610537600561060b565b505060016000555050505050505050565b80545b919050565b60008087878760405160200161056893929190610877565b60405160208183030381529060405280519060200120905060008160405160200161059391906108d2565b6040516020818303038152906040528051906020012090506000600182868989604051600081526020016040526040516105d0949392919061095b565b6020604051602081039080840390855afa1580156105f2573d6000803e3d6000fd5b5050604051601f1901519b9a5050505050505050505050565b80546001019055565b80356001600160a01b038116811461054b57600080fd5b600082601f83011261063b578081fd5b8135602061065061064b83610b95565b610b6b565b828152818101908583018385028701840188101561066c578586fd5b855b8581101561068a5781358452928401929084019060010161066e565b5090979650505050505050565b600082601f8301126106a7578081fd5b813560206106b761064b83610b95565b82815281810190858301838502870184018810156106d3578586fd5b855b8581101561068a57813560ff811681146106ed578788fd5b845292840192908401906001016106d5565b600082601f83011261070f578081fd5b813567ffffffffffffffff81111561072957610729610c10565b61073c601f8201601f1916602001610b6b565b818152846020838601011115610750578283fd5b816020850160208301379081016020019190915292915050565b60006020828403121561077b578081fd5b61078482610614565b9392505050565b60008060008060008060c087890312156107a3578182fd5b6107ac87610614565b955060208701359450604087013567ffffffffffffffff808211156107cf578384fd5b6107db8a838b016106ff565b955060608901359150808211156107f0578384fd5b6107fc8a838b0161062b565b94506080890135915080821115610811578384fd5b61081d8a838b0161062b565b935060a0890135915080821115610832578283fd5b5061083f89828a01610697565b9150509295509295509295565b6000806040838503121561085e578182fd5b8235915061086e60208401610614565b90509250929050565b60006bffffffffffffffffffffffff198560601b16825283601483015282516108a7816034850160208701610bb9565b91909101603401949350505050565b600082516108c8818460208701610bb9565b9190910192915050565b7f19457468657265756d205369676e6564204d6573736167653a0a3332000000008152601c810191909152603c0190565b6020808252825182820181905260009190848201906040850190845b818110156109445783516001600160a01b03168352928401929184019160010161091f565b50909695505050505050565b901515815260200190565b93845260ff9290921660208401526040830152606082015260800190565b60208082526027908201527f4c657373207468616e206e656564656420726571756972656420636f6e6669726040820152666d6174696f6e7360c81b606082015260800190565b60208082526034908201527f4e6f74207369676e6572206f72206475706c696361746564207369676e6572206040820152733337b9103a3434b9903a3930b739b0b1ba34b7b760611b606082015260800190565b6020808252601f908201527f5369676e61757265206c656e677468732073686f756c642062652073616d6500604082015260600190565b6020808252600a90820152693737ba1039b4b3b732b960b11b604082015260600190565b6020808252600990820152681d1e0819985a5b195960ba1b604082015260600190565b60208082526011908201527053686f756c642073656e642076616c756560781b604082015260600190565b6020808252600c908201526b5a45524f204164647265737360a01b604082015260600190565b6020808252601f908201527f5265656e7472616e637947756172643a207265656e7472616e742063616c6c00604082015260600190565b90815260200190565b6000838252604060208301528251806040840152610b48816060850160208701610bb9565b601f01601f1916919091016060019392505050565b918252602082015260400190565b60405181810167ffffffffffffffff81118282101715610b8d57610b8d610c10565b604052919050565b600067ffffffffffffffff821115610baf57610baf610c10565b5060209081020190565b60005b83811015610bd4578181015183820152602001610bbc565b83811115610be3576000848401525b50505050565b6000600019821415610c0957634e487b7160e01b81526011600452602481fd5b5060010190565b634e487b7160e01b600052604160045260246000fdfea264697066735822122086047ab650c53ead3f0822cde7e91b2c70c010ee2f12a6ad9e19619c5da9c53664736f6c63430008000033",
+  "deployedBytecode": "0x6080604052600436106100595760003560e01c80632e7700f0146100a85780637df73e27146100d357806380f59a651461010057806394cf795e14610120578063d0549b8514610142578063da33f1a414610157576100a3565b366100a357336001600160a01b03167f90890809c654f11d6e72a28fa60149770a0d11ec6c92319d6ceb2bb0a4ea1a153447604051610099929190610b5d565b60405180910390a2005b600080fd5b3480156100b457600080fd5b506100bd61016c565b6040516100ca9190610b1a565b60405180910390f35b3480156100df57600080fd5b506100f36100ee36600461076a565b61017d565b6040516100ca9190610950565b34801561010c57600080fd5b506100f361011b36600461084c565b610192565b34801561012c57600080fd5b506101356101b2565b6040516100ca9190610903565b34801561014e57600080fd5b506100bd610214565b61016a61016536600461078b565b61021a565b005b60006101786005610548565b905090565b60026020526000908152604090205460ff1681565b600460209081526000928352604080842090915290825290205460ff1681565b6060600180548060200260200160405190810160405280929190818152602001828054801561020a57602002820191906000526020600020905b81546001600160a01b031681526001909101906020018083116101ec575b5050505050905090565b60035481565b3360009081526002602052604090205460ff166102525760405162461bcd60e51b815260040161024990610a4b565b60405180910390fd5b600260005414156102755760405162461bcd60e51b815260040161024990610ae3565b60026000556001600160a01b0386166102a05760405162461bcd60e51b815260040161024990610abd565b815183511480156102b2575080518251145b6102ce5760405162461bcd60e51b815260040161024990610a14565b82516003548110156102f25760405162461bcd60e51b815260040161024990610979565b8515610317578534146103175760405162461bcd60e51b815260040161024990610a92565b6000806103246005610548565b9050600091505b828210156104615760006103b88a8a8a8a878151811061035b57634e487b7160e01b600052603260045260246000fd5b60200260200101518a888151811061038357634e487b7160e01b600052603260045260246000fd5b60200260200101518a89815181106103ab57634e487b7160e01b600052603260045260246000fd5b6020026020010151610550565b6001600160a01b03811660009081526002602052604090205490915060ff168015610406575060008281526004602090815260408083206001600160a01b038516845290915290205460ff16155b6104225760405162461bcd60e51b8152600401610249906109c0565b60008281526004602090815260408083206001600160a01b03909416835292905220805460ff191660011790558161045981610be9565b92505061032b565b6000896001600160a01b0316898960405161047c91906108b6565b60006040518083038185875af1925050503d80600081146104b9576040519150601f19603f3d011682016040523d82523d6000602084013e6104be565b606091505b50509050806104df5760405162461bcd60e51b815260040161024990610a6f565b896001600160a01b031682336001600160a01b03167fd5a05bf70715ad82a09a756320284a1b54c9ff74cd0f8cce6219e79b563fe59d8c8c604051610525929190610b23565b60405180910390a4610537600561060b565b505060016000555050505050505050565b80545b919050565b60008087878760405160200161056893929190610877565b60405160208183030381529060405280519060200120905060008160405160200161059391906108d2565b6040516020818303038152906040528051906020012090506000600182868989604051600081526020016040526040516105d0949392919061095b565b6020604051602081039080840390855afa1580156105f2573d6000803e3d6000fd5b5050604051601f1901519b9a5050505050505050505050565b80546001019055565b80356001600160a01b038116811461054b57600080fd5b600082601f83011261063b578081fd5b8135602061065061064b83610b95565b610b6b565b828152818101908583018385028701840188101561066c578586fd5b855b8581101561068a5781358452928401929084019060010161066e565b5090979650505050505050565b600082601f8301126106a7578081fd5b813560206106b761064b83610b95565b82815281810190858301838502870184018810156106d3578586fd5b855b8581101561068a57813560ff811681146106ed578788fd5b845292840192908401906001016106d5565b600082601f83011261070f578081fd5b813567ffffffffffffffff81111561072957610729610c10565b61073c601f8201601f1916602001610b6b565b818152846020838601011115610750578283fd5b816020850160208301379081016020019190915292915050565b60006020828403121561077b578081fd5b61078482610614565b9392505050565b60008060008060008060c087890312156107a3578182fd5b6107ac87610614565b955060208701359450604087013567ffffffffffffffff808211156107cf578384fd5b6107db8a838b016106ff565b955060608901359150808211156107f0578384fd5b6107fc8a838b0161062b565b94506080890135915080821115610811578384fd5b61081d8a838b0161062b565b935060a0890135915080821115610832578283fd5b5061083f89828a01610697565b9150509295509295509295565b6000806040838503121561085e578182fd5b8235915061086e60208401610614565b90509250929050565b60006bffffffffffffffffffffffff198560601b16825283601483015282516108a7816034850160208701610bb9565b91909101603401949350505050565b600082516108c8818460208701610bb9565b9190910192915050565b7f19457468657265756d205369676e6564204d6573736167653a0a3332000000008152601c810191909152603c0190565b6020808252825182820181905260009190848201906040850190845b818110156109445783516001600160a01b03168352928401929184019160010161091f565b50909695505050505050565b901515815260200190565b93845260ff9290921660208401526040830152606082015260800190565b60208082526027908201527f4c657373207468616e206e656564656420726571756972656420636f6e6669726040820152666d6174696f6e7360c81b606082015260800190565b60208082526034908201527f4e6f74207369676e6572206f72206475706c696361746564207369676e6572206040820152733337b9103a3434b9903a3930b739b0b1ba34b7b760611b606082015260800190565b6020808252601f908201527f5369676e61757265206c656e677468732073686f756c642062652073616d6500604082015260600190565b6020808252600a90820152693737ba1039b4b3b732b960b11b604082015260600190565b6020808252600990820152681d1e0819985a5b195960ba1b604082015260600190565b60208082526011908201527053686f756c642073656e642076616c756560781b604082015260600190565b6020808252600c908201526b5a45524f204164647265737360a01b604082015260600190565b6020808252601f908201527f5265656e7472616e637947756172643a207265656e7472616e742063616c6c00604082015260600190565b90815260200190565b6000838252604060208301528251806040840152610b48816060850160208701610bb9565b601f01601f1916919091016060019392505050565b918252602082015260400190565b60405181810167ffffffffffffffff81118282101715610b8d57610b8d610c10565b604052919050565b600067ffffffffffffffff821115610baf57610baf610c10565b5060209081020190565b60005b83811015610bd4578181015183820152602001610bbc565b83811115610be3576000848401525b50505050565b6000600019821415610c0957634e487b7160e01b81526011600452602481fd5b5060010190565b634e487b7160e01b600052604160045260246000fdfea264697066735822122086047ab650c53ead3f0822cde7e91b2c70c010ee2f12a6ad9e19619c5da9c53664736f6c63430008000033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 120,
+        "contract": "contracts/MultiSigWallet.sol:MultiSigWallet",
+        "label": "_status",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_uint256"
+      },
+      {
+        "astId": 5157,
+        "contract": "contracts/MultiSigWallet.sol:MultiSigWallet",
+        "label": "signers",
+        "offset": 0,
+        "slot": "1",
+        "type": "t_array(t_address)dyn_storage"
+      },
+      {
+        "astId": 5161,
+        "contract": "contracts/MultiSigWallet.sol:MultiSigWallet",
+        "label": "isSigner",
+        "offset": 0,
+        "slot": "2",
+        "type": "t_mapping(t_address,t_bool)"
+      },
+      {
+        "astId": 5163,
+        "contract": "contracts/MultiSigWallet.sol:MultiSigWallet",
+        "label": "numConfirmationsRequired",
+        "offset": 0,
+        "slot": "3",
+        "type": "t_uint256"
+      },
+      {
+        "astId": 5169,
+        "contract": "contracts/MultiSigWallet.sol:MultiSigWallet",
+        "label": "isConfirmed",
+        "offset": 0,
+        "slot": "4",
+        "type": "t_mapping(t_uint256,t_mapping(t_address,t_bool))"
+      },
+      {
+        "astId": 5172,
+        "contract": "contracts/MultiSigWallet.sol:MultiSigWallet",
+        "label": "txIds",
+        "offset": 0,
+        "slot": "5",
+        "type": "t_struct(Counter)3755_storage"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_array(t_address)dyn_storage": {
+        "base": "t_address",
+        "encoding": "dynamic_array",
+        "label": "address[]",
+        "numberOfBytes": "32"
+      },
+      "t_bool": {
+        "encoding": "inplace",
+        "label": "bool",
+        "numberOfBytes": "1"
+      },
+      "t_mapping(t_address,t_bool)": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => bool)",
+        "numberOfBytes": "32",
+        "value": "t_bool"
+      },
+      "t_mapping(t_uint256,t_mapping(t_address,t_bool))": {
+        "encoding": "mapping",
+        "key": "t_uint256",
+        "label": "mapping(uint256 => mapping(address => bool))",
+        "numberOfBytes": "32",
+        "value": "t_mapping(t_address,t_bool)"
+      },
+      "t_struct(Counter)3755_storage": {
+        "encoding": "inplace",
+        "label": "struct Counters.Counter",
+        "members": [
+          {
+            "astId": 3754,
+            "contract": "contracts/MultiSigWallet.sol:MultiSigWallet",
+            "label": "_value",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint256"
+          }
+        ],
+        "numberOfBytes": "32"
+      },
+      "t_uint256": {
+        "encoding": "inplace",
+        "label": "uint256",
+        "numberOfBytes": "32"
+      }
+    }
+  }
+}

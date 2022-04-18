@@ -1,0 +1,60 @@
+// SPDX-License-Identifier: MIT
+pragma solidity 0.8.0;
+
+import {DataTypes} from "../types/DataTypes.sol";
+
+/**
+ * @title UserConfiguration library
+ * @notice Implements the bitmap logic to handle the user configuration
+ */
+library UserConfiguration {
+    uint256 internal constant BORROWING_MASK = 0x5555555555555555555555555555555555555555555555555555555555555555;
+
+    /**
+     * @dev Sets if the user is borrowing the reserve identified by reserveIndex
+     * @param self The configuration object
+     * @param reserveIndex The index of the reserve in the bitmap
+     * @param borrowing True if the user is borrowing the reserve, false otherwise
+     **/
+    function setBorrowing(
+        DataTypes.UserConfigurationMap storage self,
+        uint256 reserveIndex,
+        bool borrowing
+    ) internal {
+        require(reserveIndex < 128, "UL_INVALID_INDEX");
+        self.data = (self.data & ~(1 << (reserveIndex * 2))) | (uint256(borrowing ? 1 : 0) << (reserveIndex * 2));
+    }
+
+    /**
+     * @dev Used to validate if a user has been using the reserve for borrowing
+     * @param self The configuration object
+     * @param reserveIndex The index of the reserve in the bitmap
+     * @return True if the user has been using a reserve for borrowing, false otherwise
+     **/
+    function isBorrowing(DataTypes.UserConfigurationMap memory self, uint256 reserveIndex)
+        internal
+        pure
+        returns (bool)
+    {
+        require(reserveIndex < 128, "UL_INVALID_INDEX");
+        return (self.data >> (reserveIndex * 2)) & 1 != 0;
+    }
+
+    /**
+     * @dev Used to validate if a user has been borrowing from any reserve
+     * @param self The configuration object
+     * @return True if the user has been borrowing any reserve, false otherwise
+     **/
+    function isBorrowingAny(DataTypes.UserConfigurationMap memory self) internal pure returns (bool) {
+        return self.data & BORROWING_MASK != 0;
+    }
+
+    /**
+     * @dev Used to validate if a user has not been using any reserve
+     * @param self The configuration object
+     * @return True if the user has been borrowing any reserve, false otherwise
+     **/
+    function isEmpty(DataTypes.UserConfigurationMap memory self) internal pure returns (bool) {
+        return self.data == 0;
+    }
+}
